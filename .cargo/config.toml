@@ -1,0 +1,3 @@
+[target.x86_64-pc-windows-msvc]
+# Link the C runtime into the portable executable, avoiding a VC++ runtime install.
+rustflags = ["-C", "target-feature=+crt-static"]
